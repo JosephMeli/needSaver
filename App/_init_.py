@@ -12,11 +12,13 @@ class User:
     def __repr__(self):
          return "%s(name=%r, salary=%r, weeks=%r)" % (
              self.__class__.__name__, self.name, self.salary, self.weeks)
-data = """
-name: Joseph Meli
-salary: 31,200
-weeks: 52
-"""
-stream = open('user.yaml', 'w')
-yaml.dump(data, stream)
-print (yaml.dump(data))
+
+if __name__ == '__main__':
+    data = """
+    name: Joseph Meli
+    salary: 31,200
+    weeks: 52
+    """
+    stream = open('user.yaml', 'w')
+    yaml.dump(data, stream)
+    print(yaml.dump(data))
