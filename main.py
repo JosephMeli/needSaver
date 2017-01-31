@@ -1,12 +1,8 @@
-import yaml,os,stat
-# Copyright Joseph Meli (2017
-filename = 'user.yaml'
-mode = 0600|stat.S_IRUSR
-try:
-    os.open('user.yaml', 'rw')
-except:
-    os.mknod(filename,mode)
-    print('created user file')
+import yaml
+import os
+# Copyright Joseph Meli (2017)
+#TODO verity that there is a user file -> if not create one
+#TODO look into encrypting the user file
 #User Object to grab from yaml config files
 class User:
     def __init__(self, name, salary, weeks):
@@ -21,6 +17,6 @@ name: Joseph Meli
 salary: 31,200
 weeks: 52
 """
-stream = file('user.yaml', 'w')
+stream = open('user.yaml', 'w')
 yaml.dump(data, stream)
-print yaml.dump(data)
+print (yaml.dump(data))
