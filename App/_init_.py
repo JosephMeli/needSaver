@@ -1,17 +1,15 @@
+# Copyright Joseph Meli (2017)
 import yaml
 import os
-# Copyright Joseph Meli (2017)
+from core import *
+
 #TODO verity that there is a user file -> if not create one
 #TODO look into encrypting the user file
 #User Object to grab from yaml config files
-class User:
-    def __init__(self, name, salary, weeks):
-        self.name = name
-        self.salary = salary
-        self.weeks = weeks
-    def __repr__(self):
-         return "%s(name=%r, salary=%r, weeks=%r)" % (
-             self.__class__.__name__, self.name, self.salary, self.weeks)
+
+joe = User("Joe",31200,52)
+joe.displayUser()
+
 
 if __name__ == '__main__':
     data = """
