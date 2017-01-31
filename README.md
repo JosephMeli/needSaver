@@ -1,39 +1,20 @@
 # needSaver
+## Development in Progress
 
 A Desktop application that will provide a way to see how long it will be to save a certain amount of money. 
-This application will also be able to include montlhy expenses
-`init-skeleton` currently just clones or copies the repository,
-executes `npm install` and `bower install` and removes `.git` directory.
-Useful for [Brunch](http://brunch.io) and
-[Grunt](http://gruntjs.com) base repos (skeletons).
+This application will also be able to take a list of your expenses too.
 
-[grunt-init](https://github.com/gruntjs/grunt-init) is similar, except it
-requires to clone projects to home directory before initialising from it.
-
-Supported formats:
+###Supported formats:
 
 * File system
 * Git URI
 * GitHub URI (`gh:user/project`, `github:user/project`)
 
-Install with npm: `npm install init-skeleton`.
+Install with make:  $ make init.
 
 ## Usage
 
-```javascript
-const initSkeleton = require('init-skeleton').init;
-
-initSkeleton('skeleton').then(() => {
-  console.log('Cloned');
-});
-```
-
-- `options`:
-    - `rootPath` - `String`, root path of the result directory
-    - `commandName`: `String`, defaults to `init-skeleton`
-    - `logger`: `console.{log,error}`-compatible logger.
-
+will show pictures of UI Example when Developed
 
 ## License
 
-[MIT](https://github.com/paulmillr/mit) (c) 2016 Paul Miller (http://paulmillr.com)
