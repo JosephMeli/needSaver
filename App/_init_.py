@@ -15,4 +15,4 @@ joe.displayUser()
 
 
 if __name__ == '__main__':
-    jbegin(FILE)
+    jfile(FILE)
