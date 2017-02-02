@@ -23,5 +23,5 @@ Weeks: 52
 '''
 
 if __name__ == '__main__':
-    #Test for Encrpytion and Decryption of a file
+    #Test for jsceret functions
     test_encrpyt_decrypt(FILENAME,PASSWORD)

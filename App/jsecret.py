@@ -11,6 +11,7 @@ def getText(FILE):
     with open(FILE, 'rb') as myfile:
         data = myfile.read().replace('\n', '')
     return data
+
 #takes a File and encrpyts a string message of that file and loads it into a secret.txt file
 def jecrypt(FILE,password):
     myVar = getText(FILE)
@@ -19,6 +20,7 @@ def jecrypt(FILE,password):
     with open('secret.txt','wb') as myfile:
         myfile.write(s_Msg)
     print(s_Msg)
+
 #Takes a secret.txt and decodes message and then writes the decode message to yaml file
 def jdecrypt(FILE,password):
     myVar = getText("secret.txt")
