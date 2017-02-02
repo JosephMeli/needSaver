@@ -7,3 +7,9 @@ def jfile(filename):
     except yaml.YAMLError as exc:
              print(exc)
 
+def load_yaml(data,filename):
+    data = yaml.load(data)
+    stream = file(filename,'wb')
+    yaml.dump(data,stream)
+
+
