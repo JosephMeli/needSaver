@@ -1,5 +1,4 @@
 # Copyright Joseph Meli (2017)
-import os
 from user import *
 from jyaml import *
 from jsecret import *
@@ -24,4 +23,5 @@ Weeks: 52
 
 if __name__ == '__main__':
     #Test for jsceret functions
-    save_finish('',PASSWORD)
+    #save_finish('',PASSWORD)
+    print("hello")

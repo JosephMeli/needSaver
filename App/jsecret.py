@@ -1,4 +1,6 @@
 from simplecrypt import encrypt, decrypt
+from os.path import exists
+from os import unlink
 import os
 #TODO delete original user file when encrypted data file created
 #TODO add username to the .yaml file title for orginization -> take in extra parameter with jecrpyt and jdecrypt for name
